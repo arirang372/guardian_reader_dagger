@@ -11,9 +11,10 @@ buildscript {
     repositories {
         jcenter()
         mavenCentral()
+        google()
     }
     dependencies {
-        classpath 'com.android.tools.build:gradle:2.3.3'
+        classpath 'com.android.tools.build:gradle:3.2.1'
         classpath 'org.jfrog.buildinfo:build-info-extractor-gradle:4.0.1'   // OJO integration
         classpath 'com.jfrog.bintray.gradle:gradle-bintray-plugin:1.6'      // Bintray integration
         classpath 'com.novoda:gradle-android-command-plugin:1.5.0'          // ADB commands from Gradle (monkey)
@@ -26,6 +27,8 @@ buildscript {
 allprojects {
     repositories {
         jcenter()
+        google() // <--here
+
     }
 }
 
